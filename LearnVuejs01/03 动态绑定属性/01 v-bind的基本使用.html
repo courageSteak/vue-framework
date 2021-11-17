@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <!--    错误做法: 不能在属性中使用mustache语法-->
+    <!--    <img src="{{ imgURL }}" alt="">-->
+
+    <!-- 正确做法：使用v-bind指令 -->
+    <img v-bind:src="imgURL" alt="">
+    <a v-bind:href="aHref">有勇气的牛排</a>
+
+    <!-- 语法糖的写法 -->
+    <img :src="imgURL" alt="">
+    <a :href="aHref">有勇气的牛排</a>
+
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      imgURL: 'https://static.920vip.net/4b9785ac56dea2567e62ba08d1ca1767.png',
+      aHref: 'https://www.920vip.net/'
+    }
+  })
+</script>
+
+</body>
+</html>

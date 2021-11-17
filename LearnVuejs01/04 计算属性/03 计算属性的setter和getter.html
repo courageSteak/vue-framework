@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <h2>{{ fullName }}</h2>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      name: '昵称',
+      nameValue: '有勇气的牛排'
+    },
+    computed: {
+      // 计算属性一般是没有set方法，只读属性
+      fullName: {
+        // app.fullName='cc|cc'
+        set: function (newValue) {
+          const names = newValue.split('|');
+          this.name = names[0];
+          this.nameValue = names[1];
+        },
+        get: function () {
+          return this.name + ' : ' + this.nameValue
+        }
+      },
+      // 简洁写法
+      // fullName: function () {
+      //   return this.name + ' : ' + this.nameValue
+      // }
+    }
+  })
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <!-- 1 选择一个 -->
+    <select name="" id="" v-model="hobby">
+        <option value="国学">国学</option>
+        <option value="轻音乐">轻音乐</option>
+        <option value="绘画">绘画</option>
+    </select>
+    <h2>您的选择是：{{ hobby }}</h2>
+
+    <!-- 1 选择多个 -->
+    <select name="" id="" v-model="hobbies" multiple>
+        <option value="国学">国学</option>
+        <option value="轻音乐">轻音乐</option>
+        <option value="绘画">绘画</option>
+    </select>
+    <h2>您的选择是：{{ hobbies }}</h2>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      hobby: "绘画",
+      hobbies:[]
+    }
+  })
+</script>
+
+</body>
+</html>
