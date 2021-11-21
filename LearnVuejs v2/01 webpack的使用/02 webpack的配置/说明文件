@@ -1,0 +1,11 @@
+package.json文件中scripts存放脚本，可以自定义
+
+使用方法：
+    npm run build
+    npm run test
+
+
+安装本地webpack依赖，安装完会出现 node_modules目录
+使用脚本执行，才会优先本地，命令行、终端默认使用全局webpack
+cd 对应目录
+npm install webpack@3.6.0 --save-dev
