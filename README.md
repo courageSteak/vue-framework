@@ -21,12 +21,3 @@ Vue框架从入门到项目实战
 5. [Vue 插槽(slot)使用](https://www.920vip.net/article/157)
 
 
-
-## 3 其他仓库地址
-
-[https://gitee.com/net920vip/vue-framework](https://gitee.com/net920vip/vue-framework)
-
-[https://github.com/net920vip/vue-framework](https://github.com/net920vip/vue-framework)
-
-[https://www.gitclone.com/gogs/net920vip](https://www.gitclone.com/gogs/net920vip)
-
